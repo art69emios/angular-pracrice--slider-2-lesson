@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+   text-align: center;
+   align-items: center;
+   background-color: black;
+ }
+
+ img{
+   width: 500px;
+   height: 500px;
+ }
+
+ button{
+   background-color: olive;
+   color: aliceblue;
+   padding: 15px 50px;
+   font-size: 30px;
+   margin: 1%;
+   cursor: pointer;
+ }
+
+ button:hover{
+  background-color: rgb(88, 88, 11);
+ }
