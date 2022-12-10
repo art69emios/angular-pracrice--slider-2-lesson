@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { elementAt } from 'rxjs';
 
 @Component({
@@ -29,6 +29,16 @@ dicrement (){
     this.i = 2
   }
 } 
+
+
+@HostListener('document:keyup',['$event'])
+chenge(e:any){
+  if(e.key == 'ArrowRight'){
+    this.increment()
+  }else if(e.key == 'ArrowLeft'){
+    this.dicrement()
+  }
+}
  
 
   
